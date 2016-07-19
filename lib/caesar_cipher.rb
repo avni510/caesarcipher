@@ -7,7 +7,7 @@ module CaesarCipher
   def encrypt(user_input, shift_value)
     @user_input = user_input
     @shift_value = shift_value
-    @user_input.each_char.map {|ch| encrypt_char(ch)}.join()
+    @user_input.chars.map {|ch| encrypt_char(ch)}.join()
   end
 
   private 
